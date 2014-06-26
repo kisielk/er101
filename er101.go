@@ -1,3 +1,7 @@
+// Package er101 is a library for parsing snapshots exported from the
+// Orthogonal Devices ER-101: Indexed Quad Sequencer
+//
+// See http://www.orthogonaldevices.com/er-101 for more details.
 package er101
 
 import (
