@@ -68,3 +68,8 @@ func Parse(r io.Reader) (ER101, error) {
 	err := dec.Decode(&e)
 	return e, err
 }
+
+func Write(w io.Writer, e ER101) error {
+	enc := xml.NewEncoder(w)
+	return enc.Encode(e)
+}
